@@ -42,6 +42,8 @@ Version=20
 
 # psscripts.ini
 $path2script = $path2script.Replace('\\', '\');
+New-Item -ItemType Directory -Force -Path "C:\Windows\System32\GroupPolicy\Machine\Scripts"
+
 @"
 [ScriptsConfig]
 StartExecutePSFirst=true
