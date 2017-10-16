@@ -3,9 +3,9 @@
 @"
 $log = "C:\" + (Get-Date -f 'yyyymmdd-hhmmss') + ".log"; 
 Get-Date > $log; 
-"@ | Set-Content 'c:\\startup.ps1' -Encoding Unicode;
+"@ | Set-Content 'C:\\startup.ps1' -Encoding Unicode;
 
-$path2script = "c:\\startup.ps1";
+$path2script = "C:\\startup.ps1";
 
 Start-Process -FilePath "gpedit.msc"
 
