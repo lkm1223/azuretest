@@ -1,8 +1,8 @@
 # change the value as you need
 # be noted that '\\' is used instead of '\'
 @"
-$log = "C:\" + (Get-Date -f 'yyyymmdd-hhmmss') + ".log"; 
-Get-Date > $log; 
+`$log = "C:\" + (Get-Date -f 'yyyymmdd-hhmmss') + ".log"; 
+Get-Date > `$log; 
 "@ | Set-Content 'C:\\startup.ps1' -Encoding Unicode;
 
 $path2script = "C:\\startup.ps1";
