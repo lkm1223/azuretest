@@ -7,6 +7,9 @@ Get-Date > $log;
 
 $path2script = "c:\\startup.ps1";
 
+Start-Process -FilePath "gpedit.msc"
+
+
 # register the starup script in registry
 @"
 Windows Registry Editor Version 5.00
